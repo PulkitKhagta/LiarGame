@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
 
-        if(Vector2.Distance(transform.position, target) <= 0.2f)
+        if(Vector2.Distance(transform.position, target) <= 0.1f)
         {
             Destroy(gameObject);
         }
